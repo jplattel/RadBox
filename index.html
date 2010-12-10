@@ -1,0 +1,32 @@
+<html>
+  <head>
+  <title>RadBox for the iPad</title>
+  <link rel="stylesheet" media="all and (orientation:landscape)" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  </head>
+  <body>
+  <div id="wrapper">
+    
+    
+  
+    <div id="content">
+    
+        {{ content }}
+    
+    </div>
+    
+    <div id="menu">
+        <a class="previous" href="{{ previous }}">&laquo;&laquo;</a>
+        <div id="title">
+        <strong>{{ title }}</strong>
+        </div> 
+        <a class="next" href="{{ next }}">&raquo;&raquo;</a>
+    </div>    
+    
+    {% include "nav.html" %}
+    
+  </div>  
+  </body>
+</html>

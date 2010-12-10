@@ -1,0 +1,24 @@
+body{margin: 0px; padding: 0px; font-family: Helvetica, Arial;}
+#wrapper{margin: 0 auto; padding: 0px; width: 1024px;}
+#menu{width: 1024px; height: 40px; background-color: #313131; color: white; text-align: center; font-size: 32px; float: left;}
+#menu a{color: white; text-decoration: none; font-family: Helvetica, Arial;}
+#menu a.remove{color: red; font-weight: bold; text-decoration: none;}
+
+.nav{font-size: 15px; }
+.nav a{text-decoration: underline}
+.frame{border: 0px;}
+.next{float: left; padding-right: 10px; font-weight: bold; width: 40px;}
+.previous{float: left; padding-left: 10px; font-weight: bold; width: 40px;}
+#title{font-family: Arial; font-size: 15px; color: white; float: left; margin: 0px; padding: 0px; padding-top: 11px; padding-left: 0px; text-align: center; width: 920px; overflow: hidden;}
+.end{text-align: center; width: 100%; font-size: 70px; font-family: Helvetica, Arial; color: #313131; padding-top: 200px; padding-bottom: 200px;}
+
+#archives{width: 1024px; font-family: Helvetica, Arial;}
+ol{margin: 0px; padding: 0px;}
+.archive_item{margin: 5px; margin-top: 10px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 10px; float: left; width: 500px; list-style-type: none; border: 1px #d6d6d6 solid}
+li.archive_item {background-color: #e5e5e5; list-style-type: none; overflow: hidden;}
+li.archive_item a{margin: 0px; padding-left: 10px; color: #333; text-decoration: none; text-transform: capitalize}
+li.archive_item a:hover{ color: #333; text-decoration: underline;}
+.single{height: 19px; overflow: hidden;}
+
+#navigation{width: 1024px; height: 25px; background-color: #313131; color: white; text-align: center; font-size: 32px; float: left; padding-top: 6px;}
+#navigation a{color: white; text-decoration: underline; font-family: Helvetica, Arial;}

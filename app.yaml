@@ -1,0 +1,15 @@
+application: radbox-ipad
+version: 1
+runtime: python
+api_version: 1
+
+builtins:
+- datastore_admin: on
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: .*
+  script: main.py
+  login: admin
