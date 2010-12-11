@@ -209,6 +209,7 @@ class Archives(webapp.RequestHandler):
             item.append(video_id)
             item.append(video.url_radbox)
             if video.watched == False:
+                #build a link for the marking as watched
                 link = '<a class="remove" href="/mark-as-watched/' + RadBoxId(video.url_radbox)[0] + '">&#215;</a>&nbsp; '
                 item.append(link)
             videolist.append(item)
@@ -224,10 +225,29 @@ class Archives(webapp.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'archives.html')
         self.response.out.write(template.render(path, template_values))
         
+
+
+
+#basic list of all unseen video's...         
+class Bonus(webapp.RequestHandler):
+    def get(self): 
+        
+        content = 'bonus'
+    
+    
+        template_values = {
+            'content': content,
+            }
+
+        path = os.path.join(os.path.dirname(__file__), 'bonus.html')
+        self.response.out.write(template.render(path, template_values))
+        
+
         
 #touch this and the application is most likely to be useless on appengine unless you know what you are doing         
 def main():
     application = webapp.WSGIApplication([('/radbox/fetch/', MainHandler),
+                                          ('/bonus/', Bonus),
                                           ('/video/(.*)/', VideoList),
                                           ('/video/', VideoRedirect),
                                           ('/mark-as-watched/(.*)', MarkAsWatched),

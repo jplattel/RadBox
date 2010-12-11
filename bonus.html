@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <title>RadBox for the iPad</title>
+  <link rel="stylesheet" media="all and (orientation:landscape)" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href=/favicon.ico" />
+  </head>
+  <body>
+  <div id="wrapper">
+    
+    {% include "nav.html" %}
+    
+    
+    
+    <div id="bonus">
+    
+    
+    <h3>Bookmarklet</h3>
+    
+    <p>To use this bookmarklet on your ipad, copy the content below:<p>
+    
+    <p class="code">
+    javascript:function addvid(){var d=document, z=d.createElement('scr'+'ipt'), b=d.body;try {if(!b) throw(0);r=Math.floor(Math.random()*100+1);z.setAttribute('src', 'http://radbox.me/init/static/add.js?r='+r.toString());b.appendChild(z);} catch(e) {alert('Please wait until the page has loaded.');}}if(window.location.hostname.search('radbox') == -1) {addvid();} else {alert('You cannot use this bookmarklet in Radbox.');}void(0);</p>
+    
+    <p>Add this page as a bookmark and paste the content as the url.<br /><br />
+    
+    You can now add video's to RadBox while you are staying on your iPad :)</p>
+    
+    
+    <h3>Add by email</h3>
+    
+    <p>Remember that RadBox provides an email to which you can send an url. If the page of the url contains any video it is added to your list... All you have to do is press sync and you are good to go!</p>
+    
+    </div>
+    
+  </div>  
+  </body>
+</html>

@@ -22,3 +22,6 @@ li.archive_item a:hover{ color: #333; text-decoration: underline;}
 
 #navigation{width: 1024px; height: 25px; background-color: #313131; color: white; text-align: center; font-size: 32px; float: left; padding-top: 6px;}
 #navigation a{color: white; text-decoration: underline; font-family: Helvetica, Arial;}
+
+#bonus{padding: 5px; float: left;}
+.code{padding: 10px; background-color: #e3e3e3}

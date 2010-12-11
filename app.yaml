@@ -7,8 +7,16 @@ builtins:
 - datastore_admin: on
 
 handlers:
+- url: /favicon\.ico 
+  static_files: favicon.ico 
+  upload: favicon.ico 
+  mime_type: image/x-icon 
+
 - url: /css
   static_dir: css
+  
+- url: /images
+  static_dir: images
 
 - url: .*
   script: main.py
